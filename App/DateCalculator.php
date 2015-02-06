@@ -6,6 +6,10 @@
  * Time: 10:25
  */
 
+
+/* nice simple date add functions*/
+/*todo turn to class */
+
 function createNewDate($d, $m, $y)
 {
     return new DateTime("$d-$m-$y");
