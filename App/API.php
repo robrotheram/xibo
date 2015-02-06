@@ -49,7 +49,7 @@ switch ($_POST['funtion']) {
 
 echo "<br/><hr/><a href='../index.php'>Back to calulator page</a>";
 
-/* todo Add better ech statements  -> turn to json api front page will use ajax */
+/* todo Add better check statements so if all feilds are blank no error  -> turn to json api front page will use ajax */
 
 
 
