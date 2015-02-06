@@ -14,7 +14,7 @@
   <input type="text" name="dateField" value="05.12.1992"/>
   <input type="text" name="secondDateField" value="05.12.1992"/>
   <input type="text" name="funtion" id="function">
-  <button>Add</button>
+  <button onclick="add(); return false;">Add</button>
   <button>Diff</button>
   <button>TimeTillNow</button>
   <button>DayDate</button>
