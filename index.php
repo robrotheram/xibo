@@ -7,6 +7,14 @@
 </head>
 <body>
 
+<h1>Data Calculator</h1>
+<hr>
+
+
+<form method="post" action="App/API.php">
+  <input type="text" name="date" value="05/12/1992"/>
+  <input type="submit">
+</form>
 
 
 </body>
