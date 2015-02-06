@@ -13,6 +13,11 @@
 <form method="post" action="App/API.php">
   <table>
     <tr>
+      <td></td>
+      <td>Date</td>
+      <td>Value (Could be another Date or a tipple of Day month year to do calculations)</td>
+    </tr>
+    <tr>
       <td>Day:</td>
       <td><input type="text" name="dateDay1" value="05"/></td>
       <td><input type="text" name="dateDay2" value="05"/></td>
