@@ -8,8 +8,10 @@
 
 function addDay($date1)
 {
-    $strDay = "P" + 32 + "D";
-    $date1->add(new DateInterval($strDay));
+    $timeValD = 32;
+
+
+    $date1->add(new DateInterval('P' . $timeValD . 'D'));
     return $date1;
 }
 
