@@ -11,8 +11,24 @@
 <hr>
 
 <form method="post" action="App/API.php">
-  <input type="text" name="dateField" value="05.12.1992"/>
-  <input type="text" name="secondDateField" value="05.12.1992"/>
+  <table>
+    <tr>
+      <td>Day:</td>
+      <td><input type="text" name="dateDay1"/></td>
+      <td><input type="text" name="dateDay2" value="05.12.1992"/></td>
+    </tr>
+    <tr>
+      <td>Month:</td>
+      <td><input type="text" name="dateMonth1"/></td>
+      <td><input type="text" name="dateMonth2"/></td>
+    </tr>
+    <tr>
+      <td>Year:</td>
+      <td><input type="text" name="dateYear1"/></td>
+      <td><input type="text" name="dateYear2"/></td>
+    </tr>
+  </table>
+
   <input type="text" name="funtion" id="function">
   <button onclick="add(); return false;"> Add</button>
   <button onclick="add(); return false;"> Diff</button>

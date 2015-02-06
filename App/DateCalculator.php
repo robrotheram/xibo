@@ -13,7 +13,8 @@ function addDate($date1, $date2)
 
 function diffDate($date1, $date2)
 {
-
+    $difference = $date1->diff($date2);
+    return $difference->format('%R%a days');
 }
 
 function timeIsNow()
