@@ -31,5 +31,5 @@ echo diffDate(timeIsNow(), $date2);
 
 
 echo "add";
-echo addDay($date2);
+echo ate_format(addDay($date2), "d/m/Y");
 

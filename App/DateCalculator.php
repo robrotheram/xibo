@@ -9,8 +9,20 @@
 function addDay($date1)
 {
     $timeValD = 32;
+    $date1->add(new DateInterval('P' . $timeValD . 'D'));
+    return $date1;
+}
 
+function addmonth($date1)
+{
+    $timeValD = 32;
+    $date1->add(new DateInterval('P' . $timeValD . 'D'));
+    return $date1;
+}
 
+function addYear($date1)
+{
+    $timeValD = 32;
     $date1->add(new DateInterval('P' . $timeValD . 'D'));
     return $date1;
 }
