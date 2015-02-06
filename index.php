@@ -30,11 +30,10 @@
   </table>
 
   <input type="hidden" name="funtion" id="function">
-  <button onclick="add(); return false;"> Add</button>
-  <button onclick="diff(); return false;"> Diff</button>
-  <button onclick="timeTillNow(); return false;"> TimeTillNow</button>
-  <button onclick="dayDate(); return false;"> DayDate</button>
-  <input type="submit">
+  <button onclick="add(); return true;"> Add</button>
+  <button onclick="diff(); return true;"> Diff</button>
+  <button onclick="timeTillNow(); return true;"> TimeTillNow</button>
+  <button onclick="dayDate(); return true;"> DayDate</button>
 </form>
 <script type="text/javascript">
   function add() {

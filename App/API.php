@@ -15,9 +15,8 @@ include 'DateCalculator.php';
 switch ($_POST['funtion']) {
     case "ADD":
         $date1 = createNewDate($_POST['dateDay1'], $_POST['dateMonth1'], $_POST['dateYear1']);
-        $date2 = createNewDate($_POST['dateDay2'], $_POST['dateMonth2'], $_POST['dateYear2']);
         echo "add";
-        echo date_format(addAmount($date2, 0, 1, 0), "d/m/Y");
+        echo date_format(addAmount($date2, $_POST['dateDay2'], $_POST['dateMonth2'], $_POST['dateYear2']), "d/m/Y");
         break;
     case "DIFF":
         $date1 = createNewDate($_POST['dateDay1'], $_POST['dateMonth1'], $_POST['dateYear1']);
@@ -41,6 +40,7 @@ switch ($_POST['funtion']) {
         break;
 }
 
+/* to do Add better ech statements  -> turn to json api front page will use ajax */
 
 
 
