@@ -12,23 +12,38 @@ error_reporting(-1);
 
 include 'DateCalculator.php';
 
+switch ($_POST['funtion']) {
+    case "ADD":
+        $date1 = createNewDate($_POST['dateDay1'], $_POST['dateMonth1'], $_POST['dateYear1']);
+        $date2 = createNewDate($_POST['dateDay2'], $_POST['dateMonth2'], $_POST['dateYear2']);
+        echo "add";
+        echo date_format(addAmount($date2, 0, 1, 0), "d/m/Y");
+        break;
+    case "DIFF":
+        $date1 = createNewDate($_POST['dateDay1'], $_POST['dateMonth1'], $_POST['dateYear1']);
+        $date2 = createNewDate($_POST['dateDay2'], $_POST['dateMonth2'], $_POST['dateYear2']);
+        echo "<br> Diff Check:";
+        echo "<br>";
+        echo diffDate($date1, $date2);
+        break;
+    case "TIMETILLNOW":
+        $date1 = createNewDate($_POST['dateDay1'], $_POST['dateMonth1'], $_POST['dateYear1']);
+        $date2 = createNewDate($_POST['dateDay2'], $_POST['dateMonth2'], $_POST['dateYear2']);
+        echo "TimeIsNowCheck";
+        echo diffDate(timeIsNow(), $date2);
+        break;
+    case "DAYDATTE":
+        $date1 = createNewDate($_POST['dateDay1'], $_POST['dateMonth1'], $_POST['dateYear1']);
+        $date2 = createNewDate($_POST['dateDay2'], $_POST['dateMonth2'], $_POST['dateYear2']);
+        echo dayOfWeek($date1);
+        echo "<br/>";
+        echo dayOfWeek($date2);
+        break;
+}
 
 
-echo "<br>";
-
-$date1 = createNewDate($_POST['dateDay1'], $_POST['dateMonth1'], $_POST['dateYear1']);
-$date2 = createNewDate($_POST['dateDay2'], $_POST['dateMonth2'], $_POST['dateYear2']);
-echo date_format($date1, "Y/m/d");
-echo "<br> Diff Check:";
-echo "<br>";
-echo date_format($date2, "d/m/Y");
-echo "<br>";
-echo diffDate($date1, $date2);
-echo "<br>";
-echo "TimeIsNowCheck";
-echo diffDate(timeIsNow(), $date2);
 
 
-echo "add";
-echo date_format(addAmount($date2, 0, 1, 0), "d/m/Y");
+
+
 
