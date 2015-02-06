@@ -12,9 +12,22 @@
 
 <form method="post" action="App/API.php">
   <input type="text" name="dateField" value="05.12.1992"/>
+  <input type="text" name="secondDateField" value="05.12.1992"/>
+  <input type="text" name="funtion" id="function">
+  <button>Add</button>
+  <button>Diff</button>
+  <button>TimeTillNow</button>
+  <button>DayDate</button>
   <input type="submit">
 </form>
+<script type="text/javascript">
+  function add() {
+    var input = document.getElementById('function');
+    input.value = 'ADD';
+  }
 
+
+</script>
 
 </body>
 </html>
