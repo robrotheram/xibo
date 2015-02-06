@@ -12,6 +12,9 @@ error_reporting(-1);
 
 include 'DateCalculator.php';
 
+
+echo "<h1>Result</h1><br/>";
+
 switch ($_POST['funtion']) {
     case "ADD":
         $date1 = createNewDate($_POST['dateDay1'], $_POST['dateMonth1'], $_POST['dateYear1']);
@@ -44,7 +47,7 @@ switch ($_POST['funtion']) {
         break;
 }
 
-echo "<a href='../index.php'>Back to calulator page</a>";
+echo "<br/><hr/><a href='../index.php'>Back to calulator page</a>";
 
 /* todo Add better ech statements  -> turn to json api front page will use ajax */
 

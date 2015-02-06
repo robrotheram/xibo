@@ -52,6 +52,9 @@
     var input = document.getElementById('function');
     input.value = 'DAYDATTE';
   }
+
+
+  /* todo change to ajax add css */
 </script>
 
 </body>
