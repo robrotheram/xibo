@@ -6,9 +6,10 @@
  * Time: 10:25
  */
 
-function addDate($date1, $timeValue)
+function addDay($date1)
 {
-    $date1->add(new DateInterval('P1Y1M4D'));
+    $strDay = "P" + 32 + "D";
+    $date1->add(new DateInterval($strDay));
     return $date1;
 }
 

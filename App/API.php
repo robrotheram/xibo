@@ -31,5 +31,5 @@ echo diffDate(timeIsNow(), $date2);
 
 
 echo "add";
-echo addDate(timeIsNow(), "");
+echo addDay($date2);
 
