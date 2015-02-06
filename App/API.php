@@ -22,7 +22,7 @@ $date2 = createNewDate($_POST['dateDay2'], $_POST['dateMonth2'], $_POST['dateYea
 echo date_format($date1, "Y/m/d");
 echo "<br> Diff Check:";
 echo "<br>";
-echo date_format($date2, "d/m/Y");
+echo date_format($date2, "dayname");
 echo "<br>";
 echo diffDate($date1, $date2);
 echo "<br>";
