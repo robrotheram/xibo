@@ -14,26 +14,26 @@
   <table>
     <tr>
       <td>Day:</td>
-      <td><input type="text" name="dateDay1"/></td>
-      <td><input type="text" name="dateDay2" value="05.12.1992"/></td>
+      <td><input type="text" name="dateDay1" value="05"/></td>
+      <td><input type="text" name="dateDay2" value="05"/></td>
     </tr>
     <tr>
       <td>Month:</td>
-      <td><input type="text" name="dateMonth1"/></td>
-      <td><input type="text" name="dateMonth2"/></td>
+      <td><input type="text" name="dateMonth1" value="05"/></td>
+      <td><input type="text" name="dateMonth2" value="05"/></td>
     </tr>
     <tr>
       <td>Year:</td>
-      <td><input type="text" name="dateYear1"/></td>
-      <td><input type="text" name="dateYear2"/></td>
+      <td><input type="text" name="dateYear1" value="2015"/></td>
+      <td><input type="text" name="dateYear2" value="2015"/></td>
     </tr>
   </table>
 
-  <input type="text" name="funtion" id="function">
+  <input type="hidden" name="funtion" id="function">
   <button onclick="add(); return false;"> Add</button>
-  <button onclick="add(); return false;"> Diff</button>
-  <button onclick="add(); return false;"> TimeTillNow</button>
-  <button onclick="add(); return false;"> DayDate</button>
+  <button onclick="diff(); return false;"> Diff</button>
+  <button onclick="timeTillNow(); return false;"> TimeTillNow</button>
+  <button onclick="dayDate(); return false;"> DayDate</button>
   <input type="submit">
 </form>
 <script type="text/javascript">
