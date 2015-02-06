@@ -9,5 +9,6 @@
 
 $dateField = $_POST['dateField'];
 
-echo "date feild was something";
+
+echo "date feild was something: $dateField";
 
