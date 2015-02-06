@@ -6,25 +6,39 @@
  * Time: 10:25
  */
 
-function addDay($date1)
+function createNewDate($d, $m, $y)
 {
-    $timeValD = 32;
+    return new DateTime("$d-$m-$y");
+}
+
+function addDay($date1, $t)
+{
+    $timeValD = $t;
     $date1->add(new DateInterval('P' . $timeValD . 'D'));
     return $date1;
 }
 
-function addmonth($date1)
+function addMonth($date1, $t)
 {
-    $timeValD = 32;
-    $date1->add(new DateInterval('P' . $timeValD . 'D'));
+    $timeValD = $t;
+    $date1->add(new DateInterval('P' . $timeValD . 'M'));
     return $date1;
 }
 
-function addYear($date1)
+function addYear($date1, $t)
 {
-    $timeValD = 32;
-    $date1->add(new DateInterval('P' . $timeValD . 'D'));
+    $timeValD = $t;
+    $date1->add(new DateInterval('P' . $timeValD . 'Y'));
     return $date1;
+}
+
+
+function addAmount($date, $d, $m, $y)
+{
+    $date . addDay($date, $d);
+    $date . addMonth($date, $m);
+    $date . addYear($date, $y);
+    return $date;
 }
 
 function diffDate($date1, $date2)
