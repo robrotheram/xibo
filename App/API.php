@@ -18,7 +18,7 @@ $dateField = $_POST['dateField'];
 echo "date feild was something: $dateField";
 checkDateIsValidFormat($dateField);
 
-$date = date_create("2013-02-12");
+$date = date_create("2013-02-12-90");
 echo date_format($date, "Y/m/d");
 
 
