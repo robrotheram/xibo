@@ -10,7 +10,7 @@ function convertStringToDate($date)
 
 }
 
-function checkDate($date)
+function checkDateIsValidFormat($date)
 {
     if (strpos($date, '/') !== false) {
         echo "slashed being used";
