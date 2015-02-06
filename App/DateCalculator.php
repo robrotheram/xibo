@@ -6,9 +6,10 @@
  * Time: 10:25
  */
 
-function addDate($date1, $date2)
+function addDate($date1, $timeValue)
 {
-
+    $date1->add(new DateInterval('P1Y1M4D'));
+    return $date1;
 }
 
 function diffDate($date1, $date2)
@@ -22,9 +23,9 @@ function timeIsNow()
     return new DateTime();
 }
 
-function dayOfWeek()
+function dayOfWeek($date1)
 {
-
+    return date_format($date1, "l");
 }
 
 
