@@ -35,9 +35,9 @@ function addYear($date1, $t)
 
 function addAmount($date, $d, $m, $y)
 {
-    $date . addDay($date, $d);
-    $date . addMonth($date, $m);
-    $date . addYear($date, $y);
+    $date = addDay($date, $d);
+    $date = addMonth($date, $m);
+    $date = addYear($date, $y);
     return $date;
 }
 
