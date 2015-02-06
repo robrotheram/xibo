@@ -7,8 +7,8 @@
  */
 
 
-$dateFeild = $_POST['date'];
+$dateField = $_POST['dateField'];
 
-echo "date feild was" + $dateFeild;
+echo "date feild was" + $dateField;
 
 ?>
