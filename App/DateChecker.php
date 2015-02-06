@@ -12,11 +12,5 @@ function convertStringToDate($date)
 
 function checkDateIsValidFormat($date)
 {
-    if (strpos($date, '/') !== false) {
-        echo "slashed being used";
-    } else if (strpos($date, '.') !== false) {
-        echo ". being used";
-    } else {
-        echo " Error";
-    }
+
 }
