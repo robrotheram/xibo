@@ -19,7 +19,7 @@ function diffDate($date1, $date2)
 
 function timeIsNow()
 {
-
+    return new DateTime();
 }
 
 function dayOfWeek()
